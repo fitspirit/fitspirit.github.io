@@ -23,15 +23,29 @@ html {
   height: 100%;
 }
 
-.title {
-  background-image: url('../img/bg-small.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+.title-img {
+  height:100%;
+  width:auto
+}
+
+.title-container {
+  max-height: 250px;
+}
+
+.spacer {
+  height:20px;
+}
+
+.flex-layout {
   position: absolute;
-  top: 0px; /* Header Height */
-  bottom: 100px; /* Footer Height */
-  width: 100%;
+  top: 10px; /* Header Height */
+  bottom: 10px; /* Footer Height */
+  left:10px;
+  right:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  /* make main axis vertical */
 }
 
 body {
