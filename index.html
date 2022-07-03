@@ -59,7 +59,8 @@
             <div class="col-lg-8">
                 <h2 class="text-white mb-4">Andreas Hammer</h2>
                 <p class="text-white-50">
-                    My approach blends my background of engineering, science, teaching, dance, and martial arts. I believe in building
+                    My approach blends my background of engineering, science, teaching, dance, and martial arts. I
+                    believe in building
                     body and mind, as both are needed for true health. My education spans over 10 years and is used to
                     provide my clients with the best possible guidance. I am currently accepting global clientele.
                 </p>
@@ -103,7 +104,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xxl-6"><img class="img-fluid-300" src="assets/img/profile4.png" alt="..."/></div>
+                        <div class="col-xxl-6"><img class="img-fluid-300" src="assets/img/profile4.png" alt="..."/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -115,12 +117,16 @@
     <div class="container px-4 px-lg-5">
         <!-- Featured Project Row-->
         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/featured2.jpg" alt="..."/>
+            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/featured2.jpg"
+                                                alt="..."/>
             </div>
             <div class="col-xl-4 col-lg-5">
                 <div class="featured-text text-center text-lg-left">
                     <h4>My Approach</h4>
-                    <p class="text-black-50 mb-0">Together, we will build the body and mind of your dreams. I will build a custom plan for your needs and be with you every step of the way with tough, honest, and empathetic accountability. My approach spans fitness, diet, sports, dance, career and business, and essential life skills.</p>
+                    <p class="text-black-50 mb-0">Together, we will build the body and mind of your dreams. I will build
+                        a custom plan for your needs and be with you every step of the way with tough, honest, and
+                        empathetic accountability. My approach spans fitness, diet, sports, dance, career and business,
+                        and essential life skills.</p>
                 </div>
             </div>
         </div>
@@ -132,7 +138,9 @@
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
                             <h4 class="text-white">Body</h4>
-                            <p class="mb-0 text-white-50">Lets bullet proof your body and get you moving in the best and most enjoyable ways. This will include fitness and health with strength, functional, and longevity traning, musicality and dance, and combat training.</p>
+                            <p class="mb-0 text-white-50">Lets bullet proof your body and get you moving in the best and
+                                most enjoyable ways. This will include fitness and health with strength, functional, and
+                                longevity traning, musicality and dance, and combat training.</p>
                             <hr class="d-none d-lg-block mb-0 ms-0"/>
                         </div>
                     </div>
@@ -147,7 +155,10 @@
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-right">
                             <h4 class="text-white">Mind</h4>
-                            <p class="mb-0 text-white-50">We will build a plan to get you from where your life is now, to the life of your dreams. This will include building efficiency through organization and planning, goal setting and motivation, and direct communication and negotiations.</p>
+                            <p class="mb-0 text-white-50">We will build a plan to get you from where your life is now,
+                                to the life of your dreams. This will include building efficiency through organization
+                                and planning, goal setting and motivation, and direct communication and
+                                negotiations.</p>
                             <hr class="d-none d-lg-block mb-0 me-0"/>
                         </div>
                     </div>
@@ -157,60 +168,24 @@
     </div>
 </section>
 
- Signup
 <section class="signup-section" id="signup">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5">
             <div class="col-md-10 col-lg-8 mx-auto text-center">
                 <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                 <h2 class="text-white mb-5">Send me a message!</h2>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-
-<!--                <form class="form-signup" action="mail_handler.php" method="post">-->
-<!--                    Email: <input type="text" name="email"><br>-->
-<!--                    Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>-->
-<!--                    <input type="submit" name="submit" value="Submit">-->
-<!--                </form>-->
-
-                <form class="form-signup" id="contactForm" action="mail_handler.php" method="post">
-                    <!-- Email address input-->
-                    <div class="row input-group-newsletter">
-                        <div class="col"><input class="form-control" id="emailAddress" type="email"
-                                                placeholder="Enter email address..." aria-label="Enter email address..."
-                                                data-sb-validations="required,email"
-                                                name="email"/></div>
-                        <div class="col-auto">
-                            <input class="btn btn-primary" type="submit" name="submit" value="Notify Me!">
-<!--                            <button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button>-->
+                <form class="form-signup" id="my-form" action="https://formspree.io/f/moqroard" method="POST">
+                    <div class="input-group-newsletter">
+                        <input class="form-control" type="email" name="email" placeholder="Enter email address..."
+                               aria-label="Enter email address..."/>
+                        <textarea name="Text1" cols="40" rows="5" class="form-control" name="message"
+                                  placeholder="Enter your message..." aria-label="Enter your message..."></textarea>
+                        <button class="btn btn-primary" id="my-form-button">Submit</button>
+                        <div id="submitSuccessMessage">
+                            <div class="text-center mb-3 mt-2 text-white">
+                                <p id="my-form-status"></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.
-                    </div>
-                    <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center mb-3 mt-2 text-white">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br/>
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage">
-                        <div class="text-center text-danger mb-3 mt-2">Error sending message!</div>
                     </div>
                 </form>
             </div>
@@ -262,16 +237,55 @@
 </section>
 <!-- Footer-->
 <footer class="footer bg-black small text-center text-white-50">
-    <div class="container px-4 px-lg-5">Copyright &copy; Fit Spirit <script>document.write(new Date().getFullYear())</script></div>
+    <div class="container px-4 px-lg-5">Copyright &copy; Fit Spirit
+        <script>document.write(new Date().getFullYear())</script>
+    </div>
 </footer>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<!-- * *                               SB Forms JS                               * *-->
-<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<!--&lt;!&ndash; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *&ndash;&gt;-->
+<!--&lt;!&ndash; * *                               SB Forms JS                               * *&ndash;&gt;-->
+<!--&lt;!&ndash; * * Activate your form at https://startbootstrap.com/solution/contact-forms * *&ndash;&gt;-->
+<!--&lt;!&ndash; * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *&ndash;&gt;-->
+<!--<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>-->
+
+<!--Form submission handling-->
+<script>
+    var form = document.getElementById("my-form");
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                status.innerHTML = "Thanks for your message!";
+                form.reset()
+            } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                        status.innerHTML = "Oops! There was a problem submitting your message"
+                    }
+                })
+            }
+        }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your message"
+        });
+    }
+
+    form.addEventListener("submit", handleSubmit)
+</script>
+
 </body>
 </html>
