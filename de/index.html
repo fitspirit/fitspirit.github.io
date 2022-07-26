@@ -59,12 +59,12 @@
             <div class="col-lg-8">
                 <h2 class="text-white mb-4">Coach Andreas</h2>
                 <p class="text-white-50">
-                    Deine Gesundheit und Glück sind das Ziel meines Wirkens. 
+                    Deine Gesundheit und dein Wohlbefinden sind das Ziel meines Wirkens. 
                     Ich liebe es, meine Klienten zu ermutigen und meine Arbeit ist auf deine individuellen Wünsche maßgeschneidert. 
                     Wir entwickeln eine Lösung die genau zu deinen Bedürfnissen passt.
                     <br /><br />
                     Als ehemaliger Ingenieur verfolge ich einen systematischen Ansatz, der wissenschaftlich fundiert ist. 
-                    Erfahrung und analytische Fähigkeiten helfen mir, deine Situation schnell zu verstehen.
+                    Mit meinen ausgeprägten analytischen Fähigkeiten erkenne ich rasch den Kern der Problemstellung. 
                     Gemeinsam finden wir einen individuellen Ansatz, der sich darauf konzentriert, was dich motiviert. 
                     Unser Ziel: Freude zu wecken und damit eine dauerhafte Veränderung zu schaffen.
                     Körper - Geist - Seele. Drei Seiten die in einem gemeinsamen Ansatz berücksichtigt werden. 
@@ -161,7 +161,7 @@
                             <h4 class="text-white">Körper</h4>
                             <p class="mb-0 text-white-50">
                                 
-                                Behandeln wir unseren Körper mit Liebe und Fürsorge, führt das zu eine unglaublichen Glücksgefühlen. 
+                                Freude und unglaublichen Glücksgefühle sind das Ergebnis, wenn wir unseren Körper mit Liebe und Fürsorge pflegen.
                                 Ich werde dich dabei unterstützen, viele wunderbare Bewegungserfahrungen zu genießen. 
                                 Dabei biete ich:Gesundheits- und Fitnesstraining, funktionelle Kraft und Ausdauer oder Sportarten wie Boxen und Tanz. 
                                 Du kannst aus einem riesen Angebot wählen  was dir am meisten Freude bereitet.
@@ -183,11 +183,13 @@
                             <h4 class="text-white">Geist</h4>
                             <p class="mb-0 text-white-50">
                                 
-                                We will build a plan to get you from where your life is now,
-                                to the life of your dreams. This will include building efficiency through organization
-                                and planning, goal setting and motivation, and direct communication and
-                                negotiations.
-                            
+                                Gemeinsam entwickeln wir einen Plan mit dem du den Weg beschreitest, der dich von
+                                deiner aktuellen Situation zu genau den Lebensumständen bringt, von denen du schon
+                                lange träumst. Dabei helfe ich dir mit Methoden, wie du deine vorhandene Zeit
+                                besser nutzen kannst und dich optimal organisierst. Außerdem unterstütze ich dich
+                                dabei, dir über Motiation und deine Ziele im klaren zu werden und wie du im Alltag
+                                erfolgreich mit den involvierten Menschen kommunizierst und erfolgreich verhandelst.                                
+                              
                             </p>
                             <hr class="d-none d-lg-block mb-0 me-0"/>
                         </div>
@@ -313,14 +315,14 @@
             }
         }).then(response => {
             if (response.ok) {
-                status.innerHTML = "Thanks for your message!";
+                status.innerHTML = "Danke, deine Nachricht ist bei mir eingegangen!";
                 form.reset()
             } else {
                 response.json().then(data => {
                     if (Object.hasOwn(data, 'errors')) {
                         status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
                     } else {
-                        status.innerHTML = "Oops! There was a problem submitting your message"
+                        status.innerHTML = "Bitte entschuldige, es gab einen Fehler beim Absenden der Nachricht."
                     }
                 })
             }
