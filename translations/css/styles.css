@@ -19,7 +19,7 @@
     --bs-orange: #fd7e14;
     --bs-yellow: #e4c662;
     --bs-green: #67c29c;
-    --bs-teal: #daa03d;
+    --bs-teal: #f8ca4b;
     --bs-cyan: #1cabc4;
     --bs-white: #fff;
     --bs-gray: #6c757d;
@@ -33,7 +33,7 @@
     --bs-gray-700: #495057;
     --bs-gray-800: #343a40;
     --bs-gray-900: #212529;
-    --bs-primary: #daa03d;
+    --bs-primary: #f8ca4b;
     --bs-secondary: #7464a1;
     --bs-success: #67c29c;
     --bs-info: #1cabc4;
@@ -246,7 +246,7 @@ sup {
 }
 
 a {
-    color: #daa03d;
+    color: #f8ca4b;
     text-decoration: underline;
 }
 
@@ -2615,8 +2615,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked {
-    background-color: #daa03d;
-    border-color: #daa03d;
+    background-color: #f8ca4b;
+    border-color: #f8ca4b;
 }
 
 .form-check-input:checked[type=checkbox] {
@@ -2628,8 +2628,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input[type=checkbox]:indeterminate {
-    background-color: #daa03d;
-    border-color: #daa03d;
+    background-color: #f8ca4b;
+    border-color: #f8ca4b;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 
@@ -2718,7 +2718,7 @@ textarea.form-control-lg {
     width: 1rem;
     height: 1rem;
     margin-top: -0.25rem;
-    background-color: #daa03d;
+    background-color: #f8ca4b;
     border: 0;
     border-radius: 1rem;
     -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2751,7 +2751,7 @@ textarea.form-control-lg {
 .form-range::-moz-range-thumb {
     width: 1rem;
     height: 1rem;
-    background-color: #daa03d;
+    background-color: #f8ca4b;
     border: 0;
     border-radius: 1rem;
     -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3205,8 +3205,8 @@ textarea.form-control-lg {
 
 .btn-primary {
     color: #fff;
-    background-color: #daa03d;
-    border-color: #daa03d;
+    background-color: #f8ca4b;
+    border-color: #f8ca4b;
 }
 
 .btn-primary:hover {
@@ -3234,8 +3234,8 @@ textarea.form-control-lg {
 
 .btn-primary:disabled, .btn-primary.disabled {
     color: #fff;
-    background-color: #daa03d;
-    border-color: #daa03d;
+    background-color: #f8ca4b;
+    border-color: #f8ca4b;
 }
 
 .btn-secondary {
@@ -3271,6 +3271,21 @@ textarea.form-control-lg {
     color: #fff;
     background-color: #7464a1;
     border-color: #7464a1;
+}
+
+.btn-secondary-gray {
+    background-color: rgba(50, 50, 50, 0.25);
+    border-color: rgba(50, 50, 50, 0.25);
+}
+
+.btn-secondary-gray:hover {
+    background-color: rgba(50, 50, 50, 0.25);
+    border-color: rgba(50, 50, 50, 0.25);
+}
+
+.btn-secondary-gray:focus {
+    background-color: rgba(50, 50, 50, 0.25);
+    border-color: rgba(50, 50, 50, 0.25);
 }
 
 .btn-success {
@@ -3554,14 +3569,14 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-    color: #daa03d;
-    border-color: #daa03d;
+    color: #f8ca4b;
+    border-color: #f8ca4b;
 }
 
 .btn-outline-primary:hover {
     color: #fff;
-    background-color: #daa03d;
-    border-color: #daa03d;
+    background-color: #f8ca4b;
+    border-color: #f8ca4b;
 }
 
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
@@ -3570,8 +3585,8 @@ textarea.form-control-lg {
 
 .btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
     color: #fff;
-    background-color: #daa03d;
-    border-color: #daa03d;
+    background-color: #f8ca4b;
+    border-color: #f8ca4b;
 }
 
 .btn-check:checked + .btn-outline-primary:focus, .btn-check:active + .btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn-outline-primary.active:focus, .btn-outline-primary.dropdown-toggle.show:focus {
@@ -3579,7 +3594,7 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary:disabled, .btn-outline-primary.disabled {
-    color: #daa03d;
+    color: #f8ca4b;
     background-color: transparent;
 }
 
@@ -3855,7 +3870,7 @@ textarea.form-control-lg {
 
 .btn-link {
     font-weight: 400;
-    color: #daa03d;
+    color: #f8ca4b;
     text-decoration: underline;
 }
 
@@ -3930,6 +3945,7 @@ textarea.form-control-lg {
 
 .dropdown-toggle {
     white-space: nowrap;
+    padding: 0, 0, 0, 0;
 }
 
 .dropdown-toggle::after {
@@ -4203,7 +4219,7 @@ textarea.form-control-lg {
 .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #daa03d;
+    background-color: #f8ca4b;
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -4248,7 +4264,7 @@ textarea.form-control-lg {
 
 .dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active {
     color: #fff;
-    background-color: #daa03d;
+    background-color: #f8ca4b;
 }
 
 .dropdown-menu-dark .dropdown-item.disabled, .dropdown-menu-dark .dropdown-item:disabled {
@@ -4385,7 +4401,7 @@ textarea.form-control-lg {
 .nav-link {
     display: block;
     padding: 0.5rem 1rem;
-    color: #daa03d;
+    color: #f8ca4b;
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4451,7 +4467,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
     color: #fff;
-    background-color: #daa03d;
+    background-color: #f8ca4b;
 }
 
 .nav-fill > .nav-link,
@@ -5386,7 +5402,7 @@ textarea.form-control-lg {
 .page-link {
     position: relative;
     display: block;
-    color: #daa03d;
+    color: #f8ca4b;
     text-decoration: none;
     background-color: #fff;
     border: 1px solid #dee2e6;
@@ -5421,8 +5437,8 @@ textarea.form-control-lg {
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: #daa03d;
-    border-color: #daa03d;
+    background-color: #f8ca4b;
+    border-color: #f8ca4b;
 }
 
 .page-item.disabled .page-link {
@@ -5655,7 +5671,7 @@ textarea.form-control-lg {
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: #daa03d;
+    background-color: #f8ca4b;
     transition: width 0.6s ease;
 }
 
@@ -5747,8 +5763,8 @@ textarea.form-control-lg {
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #daa03d;
-    border-color: #daa03d;
+    background-color: #f8ca4b;
+    border-color: #f8ca4b;
 }
 
 .list-group-item + .list-group-item {
@@ -7247,7 +7263,7 @@ textarea.form-control-lg {
 }
 
 .link-primary {
-    color: #daa03d;
+    color: #f8ca4b;
 }
 
 .link-primary:hover, .link-primary:focus {
@@ -12158,8 +12174,8 @@ body {
 #mainNav .navbar-toggler {
     font-size: 80%;
     padding: 0.75rem;
-    color: #daa03d;
-    border: 1px solid #daa03d;
+    color: #f8ca4b;
+    border: 1px solid #f8ca4b;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -12226,7 +12242,7 @@ body {
     }
 
     #mainNav.navbar-shrink .nav-link:hover {
-        color: #daa03d;
+        color: #f8ca4b;
     }
 
     #mainNav.navbar-shrink .nav-link:active {
@@ -12234,9 +12250,9 @@ body {
     }
 
     #mainNav.navbar-shrink .nav-link.active {
-        color: #daa03d;
+        color: #f8ca4b;
         outline: none;
-        border-bottom: 0.25rem solid #daa03d;
+        border-bottom: 0.25rem solid #f8ca4b;
     }
 }
 
@@ -12323,7 +12339,7 @@ body {
 @media (min-width: 992px) {
     .projects-section .featured-text {
         padding: 0 0 0 2rem;
-        border-left: 0.5rem solid #daa03d;
+        border-left: 0.5rem solid #f8ca4b;
     }
 }
 
@@ -12338,7 +12354,7 @@ body {
     }
 
     .projects-section .project-text hr {
-        border-color: #daa03d;
+        border-color: #f8ca4b;
         border-width: 0.25rem;
         width: 30%;
     }
@@ -12381,7 +12397,7 @@ body {
 
 .contact-section .card {
     border: 0;
-    border-bottom: 0.25rem solid #daa03d;
+    border-bottom: 0.25rem solid #f8ca4b;
 }
 
 .contact-section .card h4, .contact-section .card .h4 {
@@ -12392,7 +12408,7 @@ body {
 }
 
 .contact-section .card hr {
-    border-color: #daa03d;
+    border-color: #f8ca4b;
     border-width: 0.25rem;
     width: 3rem;
 }

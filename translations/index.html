@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet"/>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet"/>
+    <!-- Translations-->
+    <script src="assets/translations.js"></script>
 </head>
 <body id="page-top">
 <!-- Navigation-->
@@ -30,14 +32,20 @@
             Menu
             <i class="fas fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="/de">Deutsch</a></li>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+        </ul>
+        <div class="dropdown dropdown-menu-left btn-small-padding">
+            <button class="btn btn-secondary btn-secondary-gray dropdown-toggle p-1 m-0 mt-3 p-lg-2 m-lg-0 me-lg-4 ms-lg-4" id="lang-dropdown-title" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-left" id="dropdown-toggle-list">
             </ul>
         </div>
+    </div>
     </div>
 </nav>
 <!-- Masthead-->
@@ -47,8 +55,8 @@
             <div class="text-center">
                 <img class="logo" src="assets/img/logo_gold_2.png"/>
                 <h1 class="mx-auto my-0 text-brand text-uppercase">FIT SPIRIT</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">Personal Wellness Coaching</h2>
-                <a class="btn btn-primary" href="#signup">Get Started</a>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5 lang" langId="titleSub">Personal Wellness Coaching</h2>
+                <a class="btn btn-primary lang" href="#signup" langId="titleBtn">Get Started</a>
             </div>
         </div>
     </div>
@@ -60,8 +68,8 @@
             <div class="col-lg-8">
                 <h2 class="text-white mb-4">Coach Andreas</h2>
                 <p class="text-white-50">
-                    Your wellbeing is the focus of my craft.
-                    I love to encourage my clients and taylor my efforts to your individual desires. 
+                    En Your wellbeing is the focus of my craft.
+                    I love to encourage my clients and taylor my efforts to your individual desires.
                     We develop a solution that uniquely fits your needs.
                     <br /><br />
                     As a former engineer, my approach is systematic and science-based.
@@ -71,7 +79,6 @@
                     Body - Mind - Spirit: Three aspects of that should be addressed in an integrated approach.
                     Together, we'll develop a holistic plan to reach your goals.
                 </p>
-
                 <div class="container">
                     <div class="row gx-0 mb-0 mb-lg-0 justify-content-center">
                         <div class="col-xxl-6">
@@ -138,16 +145,16 @@
                 <div class="featured-text text-center text-lg-left">
                     <h4>My Approach</h4>
                     <p class="text-black-50 mb-0">
-                        
+
                         Together, we will build that unity of body, mind and spirit you have been dreaming of.
                         In our sessions, we'll be looking at your true desires and limitations to realize the life
-                        you deserve. I will build a custom plan for your needs and I'll  be with you every step of 
+                        you deserve. I will build a custom plan for your needs and I'll  be with you every step of
                         the way with tough, honest, and empathetic accountability. 
-                        
+
                         I offer personal coaching in person and via video call.
                         My approach spans workouts, sports, and diet as well as mental techniques for career and business
                         while helping you to uncover your values and principles.
-                    
+
                     </p>
                 </div>
             </div>
@@ -161,12 +168,12 @@
                         <div class="project-text w-100 my-auto text-center text-lg-left">
                             <h4 class="text-white">Body</h4>
                             <p class="mb-0 text-white-50">
-                                
+
                                 Treat your body with love and care! This leads to immense joy and wellbeing.
                                 I will lead you to be moving in the best and most enjoyable ways.
                                 This will include a variety of fitness and health with strength, functional,
                                 and longevity training, musicality and dance, and combat training, whichever motivates you.
-                            
+
                             </p>
                             <hr class="d-none d-lg-block mb-0 ms-0"/>
                         </div>
@@ -183,12 +190,12 @@
                         <div class="project-text w-100 my-auto text-center text-lg-right">
                             <h4 class="text-white">Mind</h4>
                             <p class="mb-0 text-white-50">
-                                
+
                                 We will build a plan to get you from where your life is now,
                                 to the life of your dreams. This will include building efficiency through organization
                                 and planning, goal setting and motivation, and direct communication and
                                 negotiations.
-                            
+
                             </p>
                             <hr class="d-none d-lg-block mb-0 me-0"/>
                         </div>
@@ -282,7 +289,7 @@
         <div class="social d-flex justify-content-center">
             <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
             <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-            <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+            <a class="mx-2" href="https://www.instagram.com/getfitspirit/"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
 </section>
@@ -331,6 +338,59 @@
     }
 
     form.addEventListener("submit", handleSubmit)
+</script>
+
+<!--Localization-->
+<script>
+    const langIdAttribute = "langId";
+    const langCacheKey = "langId"
+    const dropDownMenu = document.getElementById('lang-dropdown-title');
+
+    // Function - Update all elements with the lang class name from the translations js file.
+    function changeLanguage(languageCode) {
+        localStorage[langCacheKey] = languageCode;
+        Array.from(document.getElementsByClassName('lang')).forEach(function (elem) {
+            var elementLangId = elem.getAttribute(langIdAttribute);
+            if(elementLangId && translations.elementLangIds[elementLangId] && translations.elementLangIds[elementLangId][languageCode]) {
+                elem.innerHTML = translations.elementLangIds[elementLangId][languageCode];
+            }
+        });
+
+        dropDownMenu.innerHTML = languageCode;
+    }
+
+    // Detect language from browser.
+    const browserLang = navigator.userLanguage || navigator.language || 'en-EN';
+
+    // Get supported languages from translations.js file.
+    const supportedLanguages = translations.languages;
+
+    // Add languages to dropdown.
+    const dropDownMenuList = document.getElementById('dropdown-toggle-list');
+    for(let language in supportedLanguages) {
+        const liAnchor = document.createElement('a');
+        liAnchor.setAttribute('href', '#');
+        liAnchor.setAttribute('class', 'dropdown-item');
+        liAnchor.setAttribute(langIdAttribute, language);
+        liAnchor.addEventListener('click', (event) => {
+            changeLanguage(language);
+        });
+        liAnchor.innerHTML = supportedLanguages[language];
+
+        const li = document.createElement('li');
+        li.appendChild(liAnchor);
+
+        dropDownMenuList.appendChild(li);
+    }
+
+    // Choose supported language that matches browser language.
+    const startLang = Object.keys(supportedLanguages).map(opt => opt.value).find(val => browserLang.includes(val)) || 'en';
+
+    // Use local cache to persist selected language.
+    // startLang = localStorage[langCacheKey] || startLang;
+
+    // Update lang elements for starting language.
+    changeLanguage(startLang);
 </script>
 
 </body>
