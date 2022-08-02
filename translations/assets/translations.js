@@ -13,7 +13,7 @@ var translations = {
         "titleBtn": {
             "en": "Get Started",
             "es": "Vamonos!",
-            "de": Los geht's!"
+            "de": "Los geht's!"
         }
     }
 }
