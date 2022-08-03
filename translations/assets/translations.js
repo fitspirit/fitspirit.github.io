@@ -11,9 +11,9 @@ var translations = {
             "de": "Personal Wellness Coaching De"
         },
         "titleBtn": {
-            "en": "Get Started En",
-            "es": "Get Started Es",
-            "de": "Get Started De"
+            "en": "Get Started",
+            "es": "Vamonos!",
+            "de": "Los geht's!"
         }
     }
 }
