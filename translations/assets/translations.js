@@ -6,9 +6,9 @@ var translations = {
     },
     "elementLangIds": {
         "titleSub": {
-            "en": "Personal Wellness Coaching En",
-            "es": "Personal Wellness Coaching Es",
-            "de": "Personal Wellness Coaching De"
+            "en": "Personal Wellness Coaching",
+            "es": "Personal Wellness Coaching",
+            "de": "Personal Wellness Coaching"
         },
         "titleBtn": {
             "en": "Get Started",
