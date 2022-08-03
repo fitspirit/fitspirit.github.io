@@ -32,20 +32,20 @@
             Menu
             <i class="fas fa-bars"></i>
         </button>
-    </div>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
-        </ul>
-        <div class="dropdown dropdown-menu-left btn-small-padding">
-            <button class="btn btn-secondary btn-secondary-gray dropdown-toggle p-1 m-0 mt-3 p-lg-2 m-lg-0 me-lg-4 ms-lg-4" id="lang-dropdown-title" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            </button>
-            <ul class="dropdown-menu dropdown-menu-left" id="dropdown-toggle-list">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
             </ul>
+            <div class="dropdown dropdown-menu-left btn-small-padding">
+                <button class="btn btn-secondary btn-secondary-gray dropdown-toggle p-1 m-0 mt-3 p-lg-2 m-lg-0 me-lg-4 ms-lg-4"
+                        id="lang-dropdown-title" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-left" id="dropdown-toggle-list">
+                </ul>
+            </div>
         </div>
-    </div>
     </div>
 </nav>
 <!-- Masthead-->
@@ -71,7 +71,7 @@
                     En Your wellbeing is the focus of my craft.
                     I love to encourage my clients and taylor my efforts to your individual desires.
                     We develop a solution that uniquely fits your needs.
-                    <br /><br />
+                    <br/><br/>
                     As a former engineer, my approach is systematic and science-based.
                     My strong analytic abilities allow me to understand your situation at the core.
                     We will find an individual approach, that is focused on what motivates you.
@@ -152,7 +152,8 @@
                         the way with tough, honest, and empathetic accountability. 
 
                         I offer personal coaching in person and via video call.
-                        My approach spans workouts, sports, and diet as well as mental techniques for career and business
+                        My approach spans workouts, sports, and diet as well as mental techniques for career and
+                        business
                         while helping you to uncover your values and principles.
 
                     </p>
@@ -172,7 +173,8 @@
                                 Treat your body with love and care! This leads to immense joy and wellbeing.
                                 I will lead you to be moving in the best and most enjoyable ways.
                                 This will include a variety of fitness and health with strength, functional,
-                                and longevity training, musicality and dance, and combat training, whichever motivates you.
+                                and longevity training, musicality and dance, and combat training, whichever motivates
+                                you.
 
                             </p>
                             <hr class="d-none d-lg-block mb-0 ms-0"/>
@@ -212,9 +214,12 @@
                             <h4 class="text-white">Spirit</h4>
                             <p class="mb-0 text-white-50">
 
-                                Values determine how we perceive the world and they should be the basis of our principles and actions.
-                                Together, we'll uncover, what matters to you, that you might not even be aware of and how this leads
-                                to action. Developing our body and mind in accordance with our spirit brings the fulfilment and satisfaction.
+                                Values determine how we perceive the world and they should be the basis of our
+                                principles and actions.
+                                Together, we'll uncover, what matters to you, that you might not even be aware of and
+                                how this leads
+                                to action. Developing our body and mind in accordance with our spirit brings the
+                                fulfilment and satisfaction.
 
                             </p>
                             <hr class="d-none d-lg-block mb-0 ms-0"/>
@@ -231,7 +236,8 @@
         <div class="row gx-4 gx-lg-5">
             <div class="col-md-10 col-lg-8 mx-auto text-center">
                 <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                <h2 class="text-white mb-5">Gain valuable insights with my comprehensive check-up of your health & fitness in a free 15 minute call. </h2>
+                <h2 class="text-white mb-5">Gain valuable insights with my comprehensive check-up of your health &
+                    fitness in a free 15 minute call. </h2>
                 <form class="form-signup" id="my-form" action="https://formspree.io/f/moqroard" method="POST">
                     <div class="input-group-newsletter">
                         <input class="form-control" type="email" name="email" placeholder="Enter email address..."
@@ -261,7 +267,9 @@
                         <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                         <h4 class="text-uppercase m-0">Address</h4>
                         <hr class="my-4 mx-auto"/>
-                        <div class="small text-black-50">Available for in person training in Cancun, Mexico and online coaching</div>
+                        <div class="small text-black-50">Available for in person training in Cancun, Mexico and online
+                            coaching
+                        </div>
                     </div>
                 </div>
             </div>
@@ -351,7 +359,7 @@
         localStorage[langCacheKey] = languageCode;
         Array.from(document.getElementsByClassName('lang')).forEach(function (elem) {
             var elementLangId = elem.getAttribute(langIdAttribute);
-            if(elementLangId && translations.elementLangIds[elementLangId] && translations.elementLangIds[elementLangId][languageCode]) {
+            if (elementLangId && translations.elementLangIds[elementLangId] && translations.elementLangIds[elementLangId][languageCode]) {
                 elem.innerHTML = translations.elementLangIds[elementLangId][languageCode];
             }
         });
@@ -367,7 +375,7 @@
 
     // Add languages to dropdown.
     const dropDownMenuList = document.getElementById('dropdown-toggle-list');
-    for(let language in supportedLanguages) {
+    for (let language in supportedLanguages) {
         const liAnchor = document.createElement('a');
         liAnchor.setAttribute('href', '#');
         liAnchor.setAttribute('class', 'dropdown-item');
