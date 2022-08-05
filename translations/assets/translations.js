@@ -10,14 +10,15 @@ var translations = {
             "es": "Personal Wellness Coaching",
             "de": "Personal Wellness Coaching"
         },
-    "titleBtn": {
+        "titleBtn": {
             "en": "Get Started",
             "es": "Vamonos!",
             "de": "Los geht's!"
         }
-    "intro_p1": {
+        "intro_p1": {
             "en": "Introduction in English",
             "es": "indtroduccion en espanol",
             "de": "Übersetzung auf Detusch"
+        }
     }
 }
