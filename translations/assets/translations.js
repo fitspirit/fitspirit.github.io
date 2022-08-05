@@ -10,10 +10,11 @@ var translations = {
             "es": "Personal Wellness Coaching",
             "de": "Personal Wellness Coaching"
         },
-        "titleBtn": {
+    "titleBtn": {
             "en": "Get Started",
             "es": "Vamonos!",
             "de": "Los geht's!"
         }
+    "intro_p1": 
     }
 }
