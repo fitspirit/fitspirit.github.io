@@ -14,7 +14,7 @@ var translations = {
             "en": "Get Started",
             "es": "Vamonos!",
             "de": "Los geht's!"
-        }
+        },
         "intro_p1": {
             "en": "Introduction in English",
             "es": "indtroduccion en espanol",
